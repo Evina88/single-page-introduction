@@ -62,10 +62,18 @@ body {
 }
 
 /* Titles */
+h1 {
+	font-size: 50px;
+	color: #4e0754;
+	margin: 0 20px 0px 120px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
 h2 {
 	font-size: 50px;
 	color: #4e0754;
-	margin: 50px 20px 0px 120px;
+	margin: 0px 20px 0px 120px;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -99,39 +107,25 @@ h2 {
 }
 
 .about-me h1 {
-	font-size: 65px;
-	margin-top: 90px;
 	color: #4e0754;
+  font-size: 60px;;
 }
 
 .about-me-p {
-	font-size: 25px;
+	font-size: 24px;
 }
 .about-me span {
 	color: #000;
-	font-size: 26px;
+	font-size: 25px;
 }
 
 .profile_image {
 	width: 550px;
 	height: fit-content;
 	vertical-align: middle;
-	margin: 5px;
+	margin: 60px 5px 0;
 }
 
-.progress {
-	display: flex;
-	flex-direction: column;
-	text-align: justify;
-	margin: 0px 0px 0;
-	padding: 0 60px;
-}
-
-.progress p {
-	font-size: 26px;
-	color: rgb(128, 128, 128);
-	margin: 5px auto;
-}
 
 /* Skills */
 
@@ -185,27 +179,27 @@ h2 {
 .projects-container {
 	margin-top: 30px;
 	margin-left: 60px;
+  width: 789px;
 }
-
-.projects-container hr {
-	border: 1px solid lightgray;
-	width: 75%;
-	margin-left: 5cm;
-}
-
 .project-card {
 	margin: 0 15px 15px 30px;
 	padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.project-card a {
+  margin-right: 10px;
 }
 
 .project-card h3 {
 	font-size: 25px;
-	margin-left: 30px;
+	margin: 0 30px;
 }
 
-.project-card li {
-	font-size: 20px;
-	margin-left: 30px;
+
+.d-row{
+  display: flex;
 }
 
 /* Recommendations */
