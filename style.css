@@ -1,5 +1,5 @@
 body {
-	font-family: "Poppins", Arial, sans-serif;
+	font-family: "Poppins", Arial, sans-serif !important;
 	margin: 0;
 }
 .pt-50px {
@@ -192,6 +192,10 @@ h2 {
 
 .d-row {
 	display: flex;
+}
+
+.d-row > * {
+	font-size: 18px;
 }
 
 /* Recommendations */
