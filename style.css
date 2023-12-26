@@ -174,12 +174,13 @@ h2 {
 	margin: 30px;
 	display: flex;
 	flex-direction: column;
+	font-size: 18px;
 }
 .project-card {
 	margin: 0 15px 15px 30px;
 	padding-bottom: 5px;
 	display: flex;
-	align-items: center;
+	align-items: stretch;
 }
 .project-card a {
 	margin: 0 6px;
@@ -193,9 +194,8 @@ h2 {
 .d-row {
 	display: flex;
 }
-
-.d-row > * {
-	font-size: 18px;
+.project-card p {
+	margin: 0;
 }
 
 /* Recommendations */
