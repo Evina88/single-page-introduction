@@ -1,6 +1,5 @@
 body {
-	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-		"Lucida Sans", Arial, sans-serif;
+	font-family: "Poppins", Arial, sans-serif;
 	margin: 0;
 }
 .pt-50px {
@@ -73,7 +72,7 @@ h1 {
 h2 {
 	font-size: 50px;
 	color: #4e0754;
-	margin: 0px 20px 0px 120px;
+	margin: 0px 20px 0px 110px;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -108,15 +107,11 @@ h2 {
 
 .about-me h1 {
 	color: #4e0754;
-  font-size: 60px;;
+	font-size: 60px;
 }
 
 .about-me-p {
-	font-size: 24px;
-}
-.about-me span {
-	color: #000;
-	font-size: 25px;
+	font-size: 20px;
 }
 
 .profile_image {
@@ -126,13 +121,14 @@ h2 {
 	margin: 60px 5px 0;
 }
 
-
 /* Skills */
 
 .all_skills {
 	display: flex;
 	flex-direction: row;
 	flex-flow: wrap;
+	justify-content: center;
+	margin: 0 0 30px;
 }
 
 .skill {
@@ -140,23 +136,21 @@ h2 {
 	display: block;
 	border-radius: 6px;
 	text-align: center;
-	margin: 50px;
-	padding: 10px;
-	width: 2in;
-	font-size: 20px;
+	margin: 20px;
+	padding: 30px 15px 15px;
+	width: 180px;
+	font-size: 18px;
 	box-shadow: 0 3px 10px gray;
 }
 
 .skill img {
-	height: 35px;
 	align-items: center;
 }
 
-.skills h6 {
+.skill h6 {
 	align-items: center;
 	font-size: 20px;
-	margin-block-start: 8px;
-	margin-block-end: 5px;
+	margin: 10px auto;
 	font-weight: bold;
 }
 
@@ -177,29 +171,27 @@ h2 {
 /* Projects */
 
 .projects-container {
-	margin-top: 30px;
-	margin-left: 60px;
-  width: 789px;
+	margin: 30px;
+	display: flex;
+	flex-direction: column;
 }
 .project-card {
 	margin: 0 15px 15px 30px;
 	padding-bottom: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+	display: flex;
+	align-items: center;
 }
 .project-card a {
-  margin-right: 10px;
+	margin: 0 6px;
 }
 
 .project-card h3 {
 	font-size: 25px;
-	margin: 0 30px;
+	margin: 0 10px;
 }
 
-
-.d-row{
-  display: flex;
+.d-row {
+	display: flex;
 }
 
 /* Recommendations */
