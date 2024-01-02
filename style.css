@@ -70,6 +70,8 @@ h1 {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	margin-bottom: 20px;
+	margin-top:30px
 }
 
 h2 {
@@ -110,13 +112,21 @@ h2 {
 
 .about-me-p {
 	font-size: 20px;
+	margin: 10px 0;
 }
 
+.extra-p{
+		color: rgb(128, 128, 128);
+	text-align: justify;
+	display: flex;
+	justify-content: space-around;
+	margin: 50px 110px;
+}
 .profile_image {
 	width: 550px;
 	height: fit-content;
 	vertical-align: middle;
-	margin: 0 0 -70px 0;
+	margin: 0 0 -110px 0;
 }
 
 /* Skills */
@@ -166,11 +176,13 @@ h2 {
 	padding: 20px 40px;
 	font-size: 18px;
 }
+
 #projects th {
 	text-align: left;
 	width: 200px;
 	border-collapse: collapse;
 }
+
 #projects td {
 	text-align: left;
 }
@@ -179,142 +191,8 @@ h2 {
 	height: 70px;
 }
 
-/* Recommendations */
-
-.all_recommendations {
-	display: flex;
-	align-items: center;
-	margin-left: 1in;
-	flex-direction: row;
-	flex-flow: wrap;
-	padding: 20px;
-}
-
-.recommendation {
-	font-style: italic;
-	text-align: left;
-	width: 21.875rem;
-	padding: 1rem;
-	background-color: #fff;
-	border-radius: 11px;
-	box-shadow: 0 3px 10px var(--primary-shadow);
-	padding: 20px;
-	margin: 10px;
-	border: 1px solid gray;
-	font-size: 18px;
-	height: 150px;
-}
-
-.recommendation span {
-	color: #4e0754;
-	font-size: 20px;
-	font-family: "Times New Roman", Times, serif;
-}
-
-/* Scroll to Top Button */
-
-.iconbutton {
-	width: 48px;
-	height: 48px;
-	border-radius: 100%;
-	background-color: #4e0754;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: fixed;
-	right: 3%;
-	bottom: 3%;
-	cursor: pointer;
-}
-
-/* Form Pop-up */
-
-.popup {
-	width: 400px;
-	background-color: #e8bcf0;
-	border-radius: 3mm;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-	position: fixed;
-	/* padding: 30px; */
-	visibility: hidden;
-}
-
-.popup img {
-	padding-top: 20px;
-}
-
-.popup button {
-	background-color: #fff;
-	border: 1px solid #4e0754;
-	color: #4e0754;
-	display: block;
-	border-radius: 6px;
-	text-align: center;
-	margin: 50px;
-	padding: 10px;
-	width: 2in;
-	font-size: 20px;
-	margin-left: 25%;
-}
-
-.popup button:hover {
-	background-color: #fff;
-	border: 2px solid #4e0754;
-	color: #4e0754;
-	display: block;
-	font-weight: bolder;
-	text-align: center;
-	cursor: pointer;
-	margin-left: 25%;
-}
-
-/* Recommendation Form */
-
-input,
-textarea {
-	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-		"Lucida Sans", Arial, sans-serif;
-	margin: 10px;
-	width: 100%;
-}
-
-fieldset {
-	display: flexbox;
-	align-content: center;
-	justify-content: center;
-	padding: 25px;
-	margin-left: 50px;
-	margin-right: 50px;
-	border: thin solid white;
-	width: 50%;
-}
-
-/* Buttons */
-
-button {
-	background-color: #fff;
-	border: 1px solid #4e0754;
-	color: #4e0754;
-	display: block;
-	border-radius: 6px;
-	text-align: center;
-	margin: 50px;
-	padding: 10px;
-	width: 2in;
-	font-size: 20px;
-}
-
-button:hover {
-	background-color: #4e0754;
-	border: 1px solid #4e0754;
-	color: #fff;
-	display: block;
-	border-radius: 6px;
-	text-align: center;
-	cursor: pointer;
+#home-footer {
+	display: none;
 }
 
 /* media queries */
@@ -324,11 +202,12 @@ button:hover {
 	}
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1224px) {
 	h1 {
 		font-size: 36px;
 		margin: 20px auto 0;
 	}
+
 	#skills h2,
 	#projects h2 {
 		font-size: 36px;
@@ -354,6 +233,34 @@ button:hover {
 
 	.profile_name {
 		display: none;
+	}
+
+	#home-footer .profile_name {
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+	}
+
+	#home-footer .primary {
+		fill: #fff;
+	}
+
+	#home-footer .secondary {
+		fill: #4e0754;
+	}
+	#home-footer svg{
+		width: 50px;
+		height: 50px;
+	}
+
+	#home-footer {
+		background-color: #4e0754;
+		height: 100px;
+		margin: 0;
+		padding: 0 40px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 
 	.topmenu {
@@ -385,18 +292,22 @@ button:hover {
 		width: 70px;
 		height: 70px;
 	}
+
 	.skill {
 		margin: 10px;
 		padding: 15px 10px 10px;
 	}
+
 	.skill h6 {
 		font-size: 18px;
 		margin: 7px auto;
 	}
+
 	.skill p {
 		font-size: 16px;
 		margin: 4px auto;
 	}
+
 	h2 {
 		margin: 40px 0 0;
 	}
@@ -406,19 +317,23 @@ button:hover {
 		display: block;
 		width: 100%;
 	}
+
 	#projects table {
 		padding: 20px;
 	}
+
 	#projects tr {
 		height: 110px;
 	}
 }
+
 @media all and (max-width: 580px) {
 	.skill {
-		margin: 8px;
+		margin: 6px;
 		padding: 15px 0 0 0;
 	}
 }
+
 @media all and (max-width: 480px) {
 	.topmenu {
 		margin: 10px;
