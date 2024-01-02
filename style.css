@@ -338,4 +338,7 @@ h2 {
 	.topmenu {
 		margin: 10px;
 	}
+	#home-footer {
+		padding: 0 10px;
+	}
 }
