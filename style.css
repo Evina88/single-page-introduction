@@ -358,7 +358,7 @@ h2 {
 
 	.skill p {
 		font-size: 16px;
-		margin: 4px auto;
+		margin: 4px;
 	}
 
 	h2 {
@@ -413,6 +413,9 @@ h2 {
 	#home-footer {
 		padding: 0 10px;
 	}
+	.about-me-p {
+		text-align: left;
+	}
 }
 
 @media all and (max-width: 440px) {
@@ -421,12 +424,12 @@ h2 {
 		height: 65px;
 	}
 	.skill {
-		width: 140px;
+		width: 142px;
 		box-shadow: 0 3px 5px gray;
 	}
 	.skills p {
 		font-size: 16px;
-		margin: 2px auto;
+		margin: 2px;
 	}
 	.skills h6 {
 		font-size: 18px;
