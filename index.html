@@ -1,270 +1,963 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1" />
+		<title>Evina's Profile</title>
+		<link
+			rel="stylesheet"
+			href="./style.css" />
+		<script src="./script.js"></script>
+		<style>
+			@font-face {
+				font-family: "Poppins";
+				font-style: normal;
+				font-weight: 400;
+				font-display: swap;
+				font-stretch: 100%;
+				src: url("./fonts/poppins-v20-latin-regular.woff") format("woff");
+				unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+					U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+					U+2212, U+2215, U+FEFF, U+FFFD;
+			}
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Evina's Profile</title>
-    <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js"></script>
-    <style>
-        @font-face {
-            font-family: "Poppins";
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            font-stretch: 100%;
-            src: url("./fonts/poppins-v20-latin-regular.woff") format("woff");
-            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-                U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
-                U+2212, U+2215, U+FEFF, U+FFFD;
-        }
+			@font-face {
+				font-family: "Poppins";
+				font-style: normal;
+				font-weight: 700;
+				font-display: swap;
+				font-stretch: 100%;
+				src: url("./fonts/poppins-v20-latin-700.woff") format("woff");
+				unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+					U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+					U+2212, U+2215, U+FEFF, U+FFFD;
+			}
 
-        @font-face {
-            font-family: "Poppins";
-            font-style: normal;
-            font-weight: 700;
-            font-display: swap;
-            font-stretch: 100%;
-            src: url("./fonts/poppins-v20-latin-700.woff") format("woff");
-            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-                U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
-                U+2212, U+2215, U+FEFF, U+FFFD;
-        }
+			@font-face {
+				font-family: "Poppins";
+				font-style: normal;
+				font-weight: 600;
+				font-display: swap;
+				font-stretch: 100%;
+				src: url("./fonts/Poppins-SemiBold-600.woff") format("woff");
+				unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+					U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+					U+2212, U+2215, U+FEFF, U+FFFD;
+			}
+		</style>
+	</head>
 
-        @font-face {
-            font-family: "Poppins";
-            font-style: normal;
-            font-weight: 600;
-            font-display: swap;
-            font-stretch: 100%;
-            src: url("./fonts/Poppins-SemiBold-600.woff") format("woff");
-            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-                U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
-                U+2212, U+2215, U+FEFF, U+FFFD;
-        }
-    </style>
-</head>
+	<body>
+		<!-- Navigation Bar -->
+		<nav>
+			<div id="home">
+				<div class="profile_name">
+					<div class="contact_info">
+						<img
+							src="./images/envelope.png"
+							alt="circled-envelope" />
+						evinamous@gmail.com
+					</div>
+					<div style="clear: both"></div>
+					<div class="contact_info">
+						<img
+							src="./images/phone.png"
+							alt="circled-envelope" />
+						+306943888324
+					</div>
+				</div>
+				<div class="topdiv">
+					<a
+						class="topmenu"
+						href="#about-me"
+						>About Me</a
+					>
+					<a
+						class="topmenu"
+						href="#skills"
+						>Skills</a
+					>
+					<a
+						class="topmenu"
+						href="#projects"
+						>Projects</a
+					>
+					<a
+						class="topmenu"
+						href="#certificates"
+						>Certificates</a
+					>
+				</div>
+			</div>
+		</nav>
 
-<body>
-    <!-- Navigation Bar -->
-    <nav>
-        <div id="home">
-            <div class="profile_name">
-                <div class="contact_info">
-                    <img src="./images/envelope.png" alt="circled-envelope" />
-                    evinamous@gmail.com
-                </div>
-                <div style="clear: both"></div>
-                <div class="contact_info">
-                    <img src="./images/phone.png" alt="circled-envelope" />
-                    +306943888324
-                </div>
-            </div>
-            <div class="topdiv">
-                <a class="topmenu" href="#about-me">About Me</a>
-                <a class="topmenu" href="#skills">Skills</a>
-                <a class="topmenu" href="#projects">Projects</a>
-            </div>
-        </div>
-    </nav>
+		<!-- About Me -->
+		<section id="about-me">
+			<div class="about-me">
+				<a
+					href="https://www.vecteezy.com/vector-art/1338504-woman-sitting-on-an-armchair-and-working-with-her-laptop"
+					target="_blank">
+					<img
+						src="./images/WFH.jpg"
+						alt="woman-sitting-on-an-armchair-and-working-with-her-laptop"
+						class="profile_image" />
+				</a>
+			</div>
 
-    <!-- About Me -->
-    <section id="about-me">
-        <div class="about-me">
-            <a href="https://www.vecteezy.com/vector-art/1338504-woman-sitting-on-an-armchair-and-working-with-her-laptop"
-                target="_blank">
-                <img src="./images/WFH.jpg" alt="woman-sitting-on-an-armchair-and-working-with-her-laptop"
-                    class="profile_image" />
-            </a>
-        </div>
+			<div>
+				<h1>Hi, I'm Evina!</h1>
+				<p class="about-me-p">
+					I am a Full Stack developer with over 2 years of working experience.
+				</p>
+				<p class="about-me-p">
+					During my first year, I specialized in Front-End work, customizing
+					WordPress themes at
+					<a
+						href="https://www.cgworks.com/"
+						target="_blank"
+						>CG Works</a
+					>
+					an award-winning company blending 3D artistry with development.
+				</p>
 
-        <div>
-            <h1>Hi, I'm Evina!</h1>
-            <p class="about-me-p">
-                I am a Full Stack developer with over 2 years of working experience.
-            </p>
-            <p class="about-me-p">
-                During my first year, I specialized in Front-End work, customizing
-                WordPress themes at
-                <a href="https://www.cgworks.com/" target="_blank">CG Works</a>
-                an award-winning company blending 3D artistry with development.
-            </p>
+				<p class="about-me-p">
+					In my recent role at
+					<a
+						href="https://www.digitalwinners.gr/"
+						target="_blank"
+						>Digital Winners</a
+					>, I've continued crafting custom themes and plugins, deepening my PHP
+					knowledge.
+				</p>
 
-            <p class="about-me-p">
-                In my recent role at
-                <a href="https://www.digitalwinners.gr/" target="_blank">Digital Winners</a>, I've continued crafting
-                custom themes and plugins, deepening my PHP
-                knowledge.
-            </p>
+				<p class="about-me-p">
+					Building on this experience, I am currently pursuing professional
+					certificates from IBM in Front-End & Back-End development.
+				</p>
+				<p class="about-me-p">
+					I'm eager to join an organization with a dynamic and empowering
+					culture that aligns with my values of continuous learning and growth.
+					Excited to collaborate with diverse minds, I aspire to contribute to
+					an environment that thrives on innovation, knowledge sharing, and
+					collective growth.
+				</p>
+			</div>
+		</section>
 
-            <p class="about-me-p">
-                Building on this experience, I am currently pursuing professional
-                certificates from IBM in Front-End & Back-End development.
-            </p>
-                 <p class="about-me-p">
-                I'm eager to join an organization with a dynamic and empowering
-                culture that aligns with my values of continuous learning and growth.
-                Excited to collaborate with diverse minds, I aspire to contribute to
-                an environment that thrives on innovation, knowledge sharing, and
-                collective growth.
-            </p>
-        </div>
-   
-    </section>
+		<!-- Skills -->
+		<section id="skills">
+			<h2>Skills</h2>
+			<div style="clear: both"></div>
 
+			<div class="all_skills">
+				<div class="skill">
+					<img
+						src="./images/html_icon.svg"
+						width="100"
+						height="100"
+						alt="html_icon" />
+					<h6>HTML</h6>
+					<p>3 years experience</p>
+				</div>
 
-    <!-- Skills -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <div style="clear: both"></div>
+				<div class="skill">
+					<img
+						src="./images/css_icon.svg"
+						width="100"
+						height="100"
+						alt="css_icon" />
+					<h6>CSS</h6>
+					<p>3 years experience</p>
+				</div>
+				<div class="skill">
+					<img
+						src="./images/bootstrap_icon.svg"
+						width="100"
+						height="100"
+						alt="bootstrap_icon" />
+					<h6>Bootstrap</h6>
+					<p>3 years experience</p>
+				</div>
 
-        <div class="all_skills">
-            <div class="skill">
-                <img src="./images/html_icon.svg" width="100" height="100" alt="html_icon" />
-                <h6>HTML</h6>
-                <p>3 years experience</p>
-            </div>
+				<div class="skill">
+					<img
+						src="./images/js_icon.svg"
+						width="100"
+						height="100"
+						alt="js_icon" />
+					<h6>JavaScript</h6>
+					<p>3 years experience</p>
+				</div>
+				<div class="skill">
+					<img
+						src="./images/nodejs_icon.svg"
+						width="100"
+						height="100"
+						alt="nodejs_icon" />
+					<h6>Node.js</h6>
+					<p>3 years experience</p>
+				</div>
+				<div class="skill">
+					<img
+						src="./images/github_icon.svg"
+						width="100"
+						height="100"
+						alt="github_icon" />
+					<h6>Github</h6>
+					<p>3 years experience</p>
+				</div>
+				<div class="skill">
+					<img
+						src="./images/mysql_icon.svg"
+						width="100"
+						height="100"
+						alt="mysql_icon" />
+					<h6>MySQL</h6>
+					<p>2 years experience</p>
+				</div>
+				<div class="skill">
+					<img
+						src="./images/jquery_icon.svg"
+						width="100"
+						height="100"
+						alt="jquery_icon" />
+					<h6>jQuery</h6>
+					<p>2 years experience</p>
+				</div>
 
-            <div class="skill">
-                <img src="./images/css_icon.svg" width="100" height="100" alt="css_icon" />
-                <h6>CSS</h6>
-                <p>3 years experience</p>
-            </div>
-            <div class="skill">
-                <img src="./images/bootstrap_icon.svg" width="100" height="100" alt="bootstrap_icon" />
-                <h6>Bootstrap</h6>
-                <p>3 years experience</p>
-            </div>
+				<div class="skill">
+					<img
+						src="./images/webpack-original.svg"
+						width="100"
+						height="100"
+						alt="webpack_icon" />
+					<h6>Webpack</h6>
+					<p>2 years experience</p>
+				</div>
 
-            <div class="skill">
-                <img src="./images/js_icon.svg" width="100" height="100" alt="js_icon" />
-                <h6>JavaScript</h6>
-                <p>3 years experience</p>
-            </div>
-            <div class="skill">
-                <img src="./images/nodejs_icon.svg" width="100" height="100" alt="nodejs_icon" />
-                <h6>Node.js</h6>
-                <p>3 years experience</p>
-            </div>
-            <div class="skill">
-                <img src="./images/github_icon.svg" width="100" height="100" alt="github_icon" />
-                <h6>Github</h6>
-                <p>3 years experience</p>
-            </div>
-            <div class="skill">
-                <img src="./images/mysql_icon.svg" width="100" height="100" alt="mysql_icon" />
-                <h6>MySQL</h6>
-                <p>2 years experience</p>
-            </div>
-            <div class="skill">
-                <img src="./images/jquery_icon.svg" width="100" height="100" alt="jquery_icon" />
-                <h6>jQuery</h6>
-                <p>2 years experience</p>
-            </div>
+				<div class="skill">
+					<img
+						src="./images/php_icon.svg"
+						width="100"
+						height="100"
+						alt="php_icon" />
+					<h6>PHP</h6>
+					<p>2 years experience</p>
+				</div>
+				<div class="skill">
+					<img
+						src="./images/wp_icon.svg"
+						width="100"
+						height="100"
+						alt="wordpress_icon" />
+					<h6>WordPress</h6>
+					<p>2 years experience</p>
+				</div>
+				<div class="skill">
+					<img
+						src="./images/aws_icon.svg"
+						width="100"
+						height="100"
+						alt="aws_icon" />
+					<h6>AWS</h6>
+					<p>1 year experience</p>
+				</div>
+				<div class="skill">
+					<img
+						src="./images/cloudflare_icon.svg"
+						width="100"
+						height="100"
+						alt="cloudflare_icon" />
+					<h6>Cloudflare</h6>
+					<p>1 year experience</p>
+				</div>
+				<div class="skill">
+					<img
+						src="./images/docker_icon.svg"
+						width="100"
+						height="100"
+						alt="docker_icon" />
+					<h6>Docker</h6>
+					<p>1 year experience</p>
+				</div>
+			</div>
+		</section>
 
-            <div class="skill">
-                <img src="./images/webpack-original.svg" width="100" height="100" alt="webpack_icon" />
-                <h6>Webpack</h6>
-                <p>2 years experience</p>
-            </div>
+		<!-- Projects -->
+		<section
+			class="projects"
+			id="projects">
+			<h2>Projects</h2>
+			<div style="clear: both"></div>
 
-            <div class="skill">
-                <img src="./images/php_icon.svg" width="100" height="100" alt="php_icon" />
-                <h6>PHP</h6>
-                <p>2 years experience</p>
-            </div>
-            <div class="skill">
-                <img src="./images/wp_icon.svg" width="100" height="100" alt="wordpress_icon" />
-                <h6>WordPress</h6>
-                <p>2 years experience</p>
-            </div>
-            <div class="skill">
-                <img src="./images/aws_icon.svg" width="100" height="100" alt="aws_icon" />
-                <h6>AWS</h6>
-                <p>1 year experience</p>
-            </div>
-            <div class="skill">
-                <img src="./images/cloudflare_icon.svg" width="100" height="100" alt="cloudflare_icon" />
-                <h6>Cloudflare</h6>
-                <p>1 year experience</p>
-            </div>
-            <div class="skill">
-                <img src="./images/docker_icon.svg" width="100" height="100" alt="docker_icon" />
-                <h6>Docker</h6>
-                <p>1 year experience</p>
-            </div>
-        </div>
-    </section>
+			<table>
+				<tr>
+					<th>With CG Works:</th>
+					<td>
+						<a
+							href="https://www.cgworks.com/projects/ajuna-website"
+							target="_blank"
+							>Ajuna Website,</a
+						>
+						<a
+							href="https://www.cgworks.com/projects/uni-pharma-website"
+							target="_blank"
+							>Uni-Pharma Website,</a
+						>
+						<a
+							href="https://www.cgworks.com/projects/end-of-pain"
+							target="_blank"
+							>End of Pain</a
+						>
+						&
+						<a
+							href="https://www.cgworks.com/projects/dromeas-eshop"
+							target="_blank"
+							>Dromeas Eshop.</a
+						>
+					</td>
+				</tr>
+				<tr>
+					<th>With Digital Winners:</th>
+					<td>
+						<a
+							href="https://www.cryptogambling.tv/"
+							target="_blank"
+							>Cryptogambling.tv,</a
+						>
+						<a
+							href="https://www.nongamstopbetsites.com/"
+							target="_blank"
+							>Nongamstopbetsites.com</a
+						>
+						and others.
+					</td>
+				</tr>
+				<tr>
+					<th>Bootcamp Project:</th>
+					<td>
+						After completing a Full Stack Development Bootcamp at
+						<a
+							href="https://socialhackersacademy.org/"
+							target="_blank"
+							>Social Hackers Academy</a
+						>
+						and as a member of Class 9, I also participated in the making of the
+						<a
+							href="https://github.com/Evina88/D4DApp"
+							target="_blank"
+							>D4D App.</a
+						>
+					</td>
+				</tr>
+				<tr>
+					<th>Github Projects:</th>
+					<td>
+						Feel free to check out my
+						<a
+							href="https://github.com/Evina88"
+							target="_blank"
+							>Github account</a
+						>. There is a variety of projects, mostly from the Coursera courses
+						I've been taking.
+					</td>
+				</tr>
+			</table>
+		</section>
 
-    <!-- Projects -->
-    <section class="projects" id="projects">
-        <h2>Projects</h2>
-        <div style="clear: both"></div>
+		<!-- Certificates -->
+		<section
+			class="certificates"
+			id="certificates">
+			<h2>Coursera Certificates</h2>
+					<span class="click-cert">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+						class="icon-click-target">
+						<path
+							class="primary"
+							d="M21.97 12.73c-.25-.22-.56-.4-.92-.54L20 11.8a8 8 0 1 0-8.2 8.2l.4 1.06c.12.36.3.67.53.92a10 10 0 1 1 9.25-9.25zm-10.95 5.19a6 6 0 1 1 6.9-6.9l-2.39-.9a4 4 0 1 0-5.41 5.41l.9 2.39z" />
+						<path
+							class="secondary"
+							d="M17.96 16.54l3.75 3.75a1 1 0 0 1-1.42 1.42l-3.75-3.75-.57 2.28a1 1 0 0 1-1.9.11l-3-8a1 1 0 0 1 1.28-1.29l8 3a1 1 0 0 1-.1 1.91l-2.3.57z" />
+					</svg>
 
-        <table>
-            <tr>
-                <th>With CG Works:</th>
-                <td>
-                    <a href="https://www.cgworks.com/projects/ajuna-website">Ajuna Website,</a>
-                    <a href="https://www.cgworks.com/projects/uni-pharma-website">Uni-Pharma Website,</a>
-                    <a href="https://www.cgworks.com/projects/end-of-pain">End of Pain</a>
-                    &
-                    <a href="https://www.cgworks.com/projects/dromeas-eshop">Dromeas Eshop.</a>
-                </td>
-            </tr>
-            <tr>
-                <th>With Digital Winners:</th>
-                <td>
-                    <a href="https://www.cryptogambling.tv/">Cryptogambling.tv,</a>
-                    <a href="https://www.nongamstopbetsites.com/">Nongamstopbetsites.com</a>
-                    and others.
-                </td>
-            </tr>
-            <tr>
-                <th>Bootcamp Project:</th>
-                <td>
-                    After completing a Full Stack Development Bootcamp at
-                    <a href="https://socialhackersacademy.org/">Social Hackers Academy</a>
-                    and as a member of Class 9, I also participated in the making of the
-                    <a href="https://github.com/Evina88/D4DApp">D4D App.</a>
-                </td>
-            </tr>
-                     <tr>
-                <th>Github Projects:</th>
-                <td>
-                    Feel free to check out my
-                    <a href="https://github.com/Evina88">Github account</a>. There is a variety of projects, mostly from the Coursera courses I've been taking.
-                    
-                </td>
-            </tr>
-        </table>
-    </section>
-    <div style="clear: both"></div>
+					Click on the courses to see the certificates
+				</span>
 
-    <footer id="home-footer">
-        <div class="profile_name">
-            <div class="contact_info">
-                <img src="./images/envelope.png" alt="circled-envelope" />
-                evinamous@gmail.com
-            </div>
+			<div class="all_certificates">
+		
 
-            <div class="contact_info">
-                <img src="./images/phone.png" alt="circled-envelope" />
-                +306943888324
-            </div>
-        </div>
-        <div class="back-to-top">
-            <a href="#home">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-arrow-thick-up-circle">
-                    <circle cx="12" cy="12" r="10" class="primary" />
-                    <path class="secondary"
-                        d="M14 12v5a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-5H8a1 1 0 0 1-.7-1.7l4-4a1 1 0 0 1 1.4 0l4 4A1 1 0 0 1 16 12h-2z" />
-                </svg>
-            </a>
-        </div>
+				<div class="certificates-content">
+					<span class="cats">Professional Certificate Programs</span> and
+					<span class="cats"> Specializations</span> consist of a set of related
+					courses and provide hands-on experience in a particular skill. They
+					are designed to prepare individuals for in-demand career fields in
+					less than a year.
+				</div>
 
+				<ul>
+					<!-- IBM Front-End Developer Professional Certificate -->
+					<div class="certificate-title">
+						IBM Front-End Developer Professional Certificate
+					</div>
+					<ol>
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/2FM22TGXHCZY"
+								target="_blank">
+								Getting Started with Front-End and Web Development
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/9MUWWD2CMBHB"
+								target="_blank">
+								Introduction to Software Engineering
+							</a>
+						</li>
 
-    </footer>
-</body>
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/RLR2F43JBEUX"
+								target="_blank">
+								Designing User Interfaces and Experiences (UI/UX)
+							</a>
+						</li>
 
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/RMQJLF3FJ6NN"
+								target="_blank">
+								Introduction to HTML, CSS, & JavaScript
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/7973AZPDEDAN"
+								target="_blank">
+								Developing Websites and Front-Ends with Bootstrap
+							</a>
+						</li>
+
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/8YKBXPWAR2F5"
+								target="_blank">
+								Getting Started with Git and GitHub
+							</a>
+						</li>
+
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/WW3RACSSQG9P"
+								target="_blank">
+								Developing Front-End Apps with React
+							</a>
+						</li>
+						<!-- <div>Skills: Front-end Development, React</div> -->
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/2A2QY6TWTL75"
+								target="_blank">
+								Intermediate Web and Front-End Development
+							</a>
+						</li>
+						<!-- <div>Skills: Front-end Development, Web Development</div> -->
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/8TY73V8C3UUF"
+								target="_blank">
+								Get Started with Cloud Native, DevOps, Agile, and NoSQL
+							</a>
+						</li>
+						<!-- <div>
+                            Skills: DevOps, Agile Methodologies, Cloud-Native Applications, NoSQL
+                            Databases
+                        </div> -->
+						<!-- Front-End Development Capstone Project -->
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/NN34WALCPEK9"
+								target="_blank">
+								Software Developer Career Guide and Interview Preparation
+							</a>
+						</li>
+					</ol>
+				</ul>
+
+				<ul>
+					<!-- IBM Back-End Developer Professional Certificate -->
+					<div class="certificate-title">
+						IBM Back-End Developer Professional Certificate
+					</div>
+					<ol>
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/DZ9FD9MSA8MK"
+								target="_blank">
+								Hands-on Introduction to Linux Commands and Shell Scripting
+							</a>
+						</li>
+						<!-- <div>Skills: Linux, Shell Scripting</div> -->
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/LPP5KP6LY9N6"
+								target="_blank">
+								Introduction to Containers w/ Docker, Kubernetes & OpenShift
+							</a>
+						</li>
+						<!-- <div>Skills: Docker</div> -->
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/PTFVA4NBUTFG"
+								target="_blank">
+								Application Security for Developers and DevOps Professionals
+							</a>
+						</li>
+						<!-- <div>Skills: Application Security</div> -->
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/Q9HHYDXDEUMS"
+								target="_blank">
+								Monitoring and Observability for Development and DevOps
+							</a>
+						</li>
+						<!-- <div>Skills: Monitoring, Observability</div> -->
+					</ol>
+				</ul>
+
+				<ul>
+					<!-- IBM Full Stack Developer Professional Certificate -->
+					<div class="certificate-title">
+						IBM Full Stack Developer Professional Certificate
+					</div>
+					<ol>
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/4VTZ8UCP6WX2"
+								target="_blank">
+								Introduction to Cloud Computing
+							</a>
+						</li>
+						<!-- <div>Skills: Cloud Computing</div> -->
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/EN76YTAAD2WQ"
+								target="_blank">
+								Introduction to Web Development with HTML, CSS, JavaScript
+							</a>
+						</li>
+						<!-- <div>Skills: HTML, Cascading Style Sheets (CSS), JavaScript, Front-End Development, Web
+                            Development</div> -->
+					</ol>
+				</ul>
+
+				<ul>
+					<!--   AWS Fundamentals Specialization -->
+					<a
+						href="https://www.coursera.org/account/accomplishments/certificate/MD7XZYNN5584"
+						target="_blank">
+						<div class="certificate-title">AWS Fundamentals Specialization</div>
+					</a>
+					<ol>
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/KAJDN6P9A76Z"
+								target="_blank">
+								AWS Cloud Technical Essentials
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/UARSCJF84V5N"
+								target="_blank">
+								Migrating to the AWS Cloud
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/24K6AW6EQ4WR"
+								target="_blank">
+								Architecting Solutions on AWS
+							</a>
+						</li>
+
+						<!-- <div>Skills: Amazon Web Services (AWS)</div> -->
+					</ol>
+				</ul>
+
+				<ul>
+					<!-- Professional Skills for the Workplace Specialization -->
+
+					<a
+						href="https://www.coursera.org/account/accomplishments/specialization/certificate/AW4V4EEZBP26"
+						target="_blank">
+						<div class="certificate-title">
+							Professional Skills for the Workplace Specialization
+						</div>
+					</a>
+					<ol>
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/BHFCDKCLBZVA"
+								target="_blank">
+								Emotional and Social Intelligence
+							</a>
+						</li>
+
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/ZFBUMFD9SVNH"
+								target="_blank">
+								Critical Thinking Skills for the Professional
+							</a>
+						</li>
+
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/RLAFKXCXQL4F"
+								target="_blank">
+								The Growth Mindset
+							</a>
+						</li>
+
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/Q47NS8TTNE6R"
+								target="_blank">
+								Adaptability and Resiliency
+							</a>
+						</li>
+					</ol>
+				</ul>
+
+				<ul>
+					<div class="certificate-title">
+						Web Design for Everybody: Basics of Web Development & Coding
+						Specialization
+					</div>
+					<ol>
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/WCGDWTJ9M8MV"
+								target="_blank">
+								Introduction to HTML5
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/7VQRJ5MSPBPQ"
+								target="_blank">
+								Introduction to CSS3
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/WRCF35TZNN7V"
+								target="_blank">
+								Interactivity with Javascript
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/HDDPQKXY8ZYN"
+								target="_blank">
+								Advanced Styling with Responsive Design
+							</a>
+						</li>
+					</ol>
+				</ul>
+
+				<div class="cats">Courses</div>
+
+				<ul>
+					<ol>
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/XA2QZNZV9QRE"
+								target="_blank">
+								Foundations for Big Data Analysis with SQL
+							</a>
+						</li>
+
+						<!-- <li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/W4K9TXDQ3M23"
+								target="_blank">
+								Introduction to Java
+							</a>
+						</li> -->
+
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/H89H2MYSVJYM"
+								target="_blank">
+								Building Web Applications in PHP
+							</a>
+						</li>
+
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/CKMW99QKANH6"
+								target="_blank">
+								HTML, CSS, and Javascript for Web Developers
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/YHNBNHUA5FJY"
+								target="_blank">
+								Software Processes and Agile Practices
+							</a>
+						</li>
+
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/JBPPM6X7Q7YQ"
+								target="_blank">
+								Introduction to Agile Development and Scrum
+							</a>
+						</li>
+
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/3KW49Z8DUNBF"
+								target="_blank">
+								Agile with Atlassian Jira
+							</a>
+						</li>
+					</ol>
+				</ul>
+				<div>
+					<!--  Guided Projects -->
+
+					<span class="cats">Guided Projects</span> are hands-on educational
+					experiences focused on teaching a single skill or technique through
+					step-by-step instruction and practice in a cloud workspace, typically
+					lasting less than 2 hours.
+				</div>
+
+				<ul>
+					<ol>
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/FDGTLRHSA5AW"
+								target="_blank">
+								Learn Object-Oriented Programming with PHP
+							</a>
+						</li>
+
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/4PUQR6PX7UDF"
+								target="_blank">
+								Containerize a full-stack NodeJS application in Docker
+							</a>
+						</li>
+
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/K6YCUBNK5WBF"
+								target="_blank">
+								Introduction to Docker: Build Your Own Portfolio Site
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/KJ7Y5CVQLNHL"
+								target="_blank">
+								Write a University Index Web App with VueJS
+							</a>
+						</li>
+
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/DLAAPRBT24J8"
+								target="_blank">
+								Javascript animation for websites, storytelling, data
+								visualization and games
+							</a>
+						</li>
+
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/EG4WMY8VH9KK"
+								target="_blank">
+								JavaScript Debugging Tips for Beginners
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/CCXZU9RBTQAH"
+								target="_blank">
+								Modern JavaScript: ES6 Basics
+							</a>
+						</li>
+
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/PTGRFJ9AL5EF"
+								target="_blank">
+								Basic User Interface Design for Web Developers
+							</a>
+						</li>
+
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/9UUCTFMR4CPB"
+								target="_blank">
+								Get Started with Figma
+							</a>
+						</li>
+
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/RUGBE433G6CK"
+								target="_blank">
+								Design and Develop a Website using Figma and CSS
+							</a>
+						</li>
+
+						<!-- <li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/Y3M4CFUN86P3"
+								target="_blank">
+								Build a Full Website using WordPress
+							</a>
+						</li> -->
+
+						<!-- <li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/Z6HVCL9ANMB4"
+								target="_blank">
+								Create an Android App with Kotlin
+							</a>
+						</li> -->
+					</ol>
+				</ul>
+				<div class="cats">Soft Skills</div>
+				<ul>
+					<ol>
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/UVUYEFE4BGXW"
+								target="_blank">
+								Learning How to Learn: Powerful mental tools to help you master
+								tough subjects
+							</a>
+						</li>
+						<!-- <div>Skills: Learning, Memory, Mental Tools</div> -->
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/8FVSDP9JEJYT"
+								target="_blank">
+								The Science of Success: What Researchers Know that You Should
+								Know
+							</a>
+						</li>
+						<!-- <div>Skills: Continuing Education</div> -->
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/4HXGTE5RY8M2"
+								target="_blank">
+								Creative Thinking: Techniques and Tools for Success
+							</a>
+						</li>
+						<!-- <div>Skills: Creative Thinking</div> -->
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/AMAE9XX5VJ4W"
+								target="_blank">
+								Know Thyself - The Value and Limits of Self-Knowledge: The
+								Examined Life
+							</a>
+						</li>
+						<!-- <div>Skills: Continuing Education</div> -->
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/WYWSS9Y6NZCJ"
+								target="_blank">
+								Effective Problem-Solving and Decision-Making
+							</a>
+						</li>
+						<!-- <div>Skills: Problem-Solving, Decision-Making</div> -->
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/B37WL35VDBCL"
+								target="_blank">
+								Finding Purpose and Meaning In Life: Living for What Matters
+								Most
+							</a>
+						</li>
+						<!-- <div>Skills: Purpose, Meaning</div> -->
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/FRUUSBG97J8N"
+								target="_blank">
+								Work Smarter, Not Harder: Time Management for Personal &
+								Professional Productivity
+							</a>
+						</li>
+						<!-- <div>Skills: Time Management, Productivity</div> -->
+
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/799BYGT85GTU"
+								target="_blank">
+								Mindshift: Break Through Obstacles to Learning and Discover Your
+								Hidden Potential (with Honors)
+							</a>
+						</li>
+						<!-- <div>Skills: Continuing Education</div> -->
+						<li>
+							<a
+								href="https://www.coursera.org/account/accomplishments/certificate/JBTVG9TAJ3F5"
+								target="_blank">
+								De-Mystifying Mindfulness
+							</a>
+						</li>
+						<!-- <div>Skills: Mindfulness</div> -->
+					</ol>
+				</ul>
+			</div>
+		</section>
+
+		<footer id="home-footer">
+			<div class="profile_name">
+				<div class="contact_info">
+					<img
+						src="./images/envelope.png"
+						alt="circled-envelope" />
+					evinamous@gmail.com
+				</div>
+
+				<div class="contact_info">
+					<img
+						src="./images/phone.png"
+						alt="circled-envelope" />
+					+306943888324
+				</div>
+			</div>
+			<div class="back-to-top">
+				<a href="#home">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+						class="icon-arrow-thick-up-circle">
+						<circle
+							cx="12"
+							cy="12"
+							r="10"
+							class="primary" />
+						<path
+							class="secondary"
+							d="M14 12v5a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-5H8a1 1 0 0 1-.7-1.7l4-4a1 1 0 0 1 1.4 0l4 4A1 1 0 0 1 16 12h-2z" />
+					</svg>
+				</a>
+			</div>
+		</footer>
+	</body>
 </html>

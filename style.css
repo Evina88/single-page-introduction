@@ -25,7 +25,7 @@ body {
 
 .topmenu {
 	color: #f2e6f3;
-	margin: 20px;
+	margin: 20px 10px;
 	padding: 10px;
 	font-size: 20px;
 	border-bottom: 2px solid transparent;
@@ -35,10 +35,6 @@ body {
 .topmenu:hover {
 	color: #fff;
 	border-bottom: 2px solid #fff;
-}
-
-.topdiv {
-	padding-right: 3rem;
 }
 
 .profile_name {
@@ -175,7 +171,7 @@ h2 {
 #projects table {
 	padding: 20px 40px 20px 100px;
 	font-size: 18px;
-	margin-bottom:50px;
+	margin-bottom: 50px;
 }
 
 #projects th {
@@ -192,6 +188,56 @@ h2 {
 	height: 70px;
 }
 
+#certificates .all_certificates {
+	padding: 20px 40px 20px 100px;
+	font-size: 18px;
+	margin-bottom: 50px;
+}
+#certificates a {
+	text-decoration: none;
+	color: #4e0754;
+}
+#certificates ul > li {
+	list-style-type: none;
+}
+#certificates .certificate-title {
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+#certificates .cats {
+	color: #4e0754;
+	font-weight: 600;
+}
+
+#certificates .click-cert {
+	font-size: 14px;
+	display: flex;
+	margin: 0px 20px 0px 110px;
+}
+#certificates .click-cert svg {
+	margin: 0 5px 0 0;
+	width: 20px;
+	height: 20px;
+}
+#certificates .click-cert svg .primary {
+	fill: #b2b7ff;
+}
+
+#certificates .click-cert svg .secondary {
+	fill: #2f365f;
+}
+
+#certificates .certificates-content {
+	margin: 10px 0 20px 0;
+}
+
+#certificates ol > li {
+	margin-bottom: 3px;
+}
+#certificates ul {
+	margin-bottom: 30px;
+}
+
 #home-footer {
 	display: none;
 }
@@ -199,7 +245,7 @@ h2 {
 /* media queries */
 @media all and (max-width: 1440px) {
 	#about-me {
-		margin: 20px;
+		margin: 20px 40px;
 	}
 }
 
@@ -210,10 +256,12 @@ h2 {
 	}
 
 	#skills h2,
-	#projects h2 {
+	#projects h2,
+	#certificates h2 {
 		font-size: 36px;
 		margin: 40px 0 20px;
 		justify-content: center;
+		text-align: center;
 	}
 
 	.about-me-p {
@@ -224,11 +272,15 @@ h2 {
 	.profile_image {
 		width: 350px;
 	}
+	#certificates .click-cert {
+		justify-content: center;
+		margin: 0px;
+	}
 }
 
 @media all and (max-width: 980px) {
 	#about-me {
-		flex-direction: column-reverse;
+		flex-direction: column;
 		justify-content: center;
 	}
 
@@ -266,7 +318,7 @@ h2 {
 
 	.topmenu {
 		border-bottom: 0;
-		margin: 10px 30px;
+		margin: 10px;
 		font-size: 18px;
 	}
 
@@ -319,12 +371,26 @@ h2 {
 		width: 100%;
 	}
 
+	#projects td {
+		margin: 0 0 20px 0;
+	}
+
 	#projects table {
-		padding: 20px;
+		padding: 20px 40px;
 	}
 
 	#projects tr {
-		height: 110px;
+		height: unset;
+	}
+	#certificates .all_certificates {
+		padding: 20px 40px;
+	}
+	#certificates ul {
+		margin-bottom: 30px;
+		margin: 20px 0px 30px -40px;
+	}
+	#certificates li {
+		font-size: 16px;
 	}
 }
 
@@ -338,8 +404,58 @@ h2 {
 @media all and (max-width: 480px) {
 	.topmenu {
 		margin: 10px;
+		padding: 3px;
+	}
+	.topdiv {
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 	#home-footer {
 		padding: 0 10px;
+	}
+}
+
+@media all and (max-width: 440px) {
+	.skill img {
+		width: 60px;
+		height: 65px;
+	}
+	.skill {
+		width: 140px;
+		box-shadow: 0 3px 5px gray;
+	}
+	.skills p {
+		font-size: 16px;
+		margin: 2px auto;
+	}
+	.skills h6 {
+		font-size: 18px;
+		margin: 5px auto;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	#home-footer {
+		flex-wrap: wrap;
+		justify-content: center;
+		height: unset;
+		padding: 10px;
+	}
+
+	#certificates .all_certificates,
+	#projects table,
+	#about-me {
+		margin: 20px 20px;
+	}
+	#projects table,
+	#certificates .all_certificates {
+		padding: 0;
+	}
+	#certificates .click-cert {
+		width: 180px;
+		margin: 0 auto;
+	}
+	.skill {
+		width: 135px;
 	}
 }
